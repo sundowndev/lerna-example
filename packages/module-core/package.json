@@ -1,0 +1,21 @@
+{
+  "name": "@sundowndev/module-core",
+  "version": "1.0.0",
+  "main": "build/index",
+  "types": "build/index",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./build",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "3.5.3"
+  },
+  "dependencies": {
+    "@sundowndev/module-interfaces": "^1.0.0"
+  }
+}

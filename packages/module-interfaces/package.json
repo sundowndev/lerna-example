@@ -1,21 +1,18 @@
 {
-  "name": "@nighttrax/bar",
+  "name": "@sundowndev/module-interfaces",
   "version": "1.0.0",
-  "main": "dist/index",
-  "types": "dist/index",
+  "main": "build/index",
+  "types": "build/index",
   "files": [
-    "dist"
+    "build"
   ],
   "scripts": {
     "build": "npm run clean && npm run compile",
-    "clean": "rm -rf ./dist",
+    "clean": "rm -rf ./build",
     "compile": "tsc -p tsconfig.build.json",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {
-    "@nighttrax/foo": "^1.0.0"
-  },
   "devDependencies": {
-    "typescript": "~3.4.5"
+    "typescript": "3.5.3"
   }
 }
