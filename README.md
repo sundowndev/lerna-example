@@ -1,6 +1,6 @@
-### Example TypeScript monorepo with Lerna, Jest, TSlint & Babel
+# lerna-example
 
-----
+Example Lerna monorepo with Jest, TypeScript & Babel
 
 ## Features
 
